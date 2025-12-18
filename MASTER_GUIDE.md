@@ -148,6 +148,5 @@ pip install -r requirements.txt
 
 *(Includes: paramiko, mysql-connector-python, cryptography, schedule, pandas, requests)*
 
-```
 
 
