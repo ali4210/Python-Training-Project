@@ -1,0 +1,24 @@
+# ==>> System & Remote Access
+paramiko
+requests
+
+# ==>> Database & Data
+mysql-connector-python
+pandas
+matplotlib
+numpy
+
+# ==>> Security
+cryptography
+
+# ==>> Scheduling & Testing
+schedule
+pytest
+pytest-html
+pytest-xdist
+
+# ==>> NLP & Extras (From your notebooks)
+nltk
+joblib
+regex
+tqdm
