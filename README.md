@@ -95,5 +95,3 @@ python Mini_project.py --api_url "[https://api.example.com/data](https://api.exa
 
 * **Role:** DevOps & Python Automation Engineer
 * **Focus:** Automating the boring stuff with secure, scalable code.
-
-```
