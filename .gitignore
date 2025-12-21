@@ -1,0 +1,551 @@
+# ==============================================================================
+# Python Training Project - Comprehensive .gitignore
+# ==============================================================================
+# Purpose: Security-first approach to protect sensitive data and credentials
+# Author: Mohammad Saleem Ali
+# Project: Python Training & DevOps Automation Suite
+# ==============================================================================
+
+# ==============================================================================
+# 🔐 SECURITY & CREDENTIALS (CRITICAL - NEVER COMMIT!)
+# ==============================================================================
+
+# JSON files with credentials
+mypass.json
+mylinux.json
+user.json
+user_details.json
+*.credentials.json
+
+# Python files with hardcoded credentials
+*password*.py
+*secret*.py
+*credentials*.py
+
+# SSH Keys
+*.pem
+*.ppk
+id_rsa*
+id_dsa*
+*.key
+*.pub
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+.envrc
+
+# API Keys and Tokens
+*.token
+*.apikey
+api_keys.txt
+secrets.txt
+
+# Database credentials
+db_credentials.*
+mysql_pass.*
+
+# Cloud provider credentials
+.aws/
+.gcp/
+.azure/
+
+# SSL/TLS Certificates
+*.crt
+*.cer
+*.der
+*.pem
+*.p12
+*.pfx
+
+# ==============================================================================
+# 🐍 PYTHON
+# ==============================================================================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+.pybuilder/
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*-checkpoint.ipynb
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# poetry
+poetry.lock
+
+# pdm
+.pdm.toml
+
+# PEP 582
+__pypackages__/
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# pytype static type analyzer
+.pytype/
+
+# Cython debug symbols
+cython_debug/
+
+# ==============================================================================
+# 💾 DATABASES
+# ==============================================================================
+
+# MySQL
+*.sql
+*.sql.gz
+*.dump
+mysql-data/
+mysqldump_*
+
+# SQLite
+*.db
+*.sqlite
+*.sqlite3
+
+# PostgreSQL
+*.pgdump
+postgresql-data/
+
+# MongoDB
+*.bson
+mongodb-data/
+
+# Redis
+dump.rdb
+redis-data/
+
+# ==============================================================================
+# 📝 IDEs & EDITORS
+# ==============================================================================
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+.history/
+
+# PyCharm
+.idea/
+*.iml
+*.iws
+*.ipr
+.idea_modules/
+out/
+cmake-build-*/
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/usage.statistics.xml
+.idea/**/dictionaries
+.idea/**/shelf
+
+# Sublime Text
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+*.sublime-workspace
+*.sublime-project
+
+# Vim
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
+[._]sw[a-p]
+Session.vim
+Temporary Items
+.netrwhist
+*~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# Eclipse
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.loadpath
+.recommenders
+
+# Atom
+.atom/
+nul
+
+# ==============================================================================
+# 💻 OPERATING SYSTEMS
+# ==============================================================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.directory
+.Trash-*
+.nfs*
+
+# ==============================================================================
+# 📦 PROJECT SPECIFIC
+# ==============================================================================
+
+# Output files
+output/
+results/
+reports/
+*.output
+test_results/
+
+# Data files (large datasets)
+data/
+*.csv
+*.xlsx
+*.xls
+!sample*.csv  # Keep sample files
+
+# Image files (except logos)
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.bmp
+!logo.*
+!mahir.JPG  # Keep specific project images
+
+# Video files
+*.mp4
+*.avi
+*.mov
+*.wmv
+
+# Audio files
+*.mp3
+*.wav
+*.ogg
+
+# Compressed files
+*.zip
+*.tar
+*.gz
+*.rar
+*.7z
+*.bz2
+
+# Log files
+*.log
+logs/
+*.log.*
+log_*.txt
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.temp
+*.cache
+
+# Backup files
+*.bak
+*.backup
+*.old
+*.orig
+*~
+
+# HTML test reports (except template)
+alnafi.html
+test_report_*.html
+!pytest_template.html
+
+# JSON output files
+fruits.json
+my.json
+output*.json
+result*.json
+
+# Text files with sensitive data
+abd.txt
+test_data.txt
+server_list.txt
+
+# Batch files (except specific ones)
+*.bat
+!windows_task.bat  # Keep specific batch file
+
+# ==============================================================================
+# 🔧 BUILD & DEPLOYMENT
+# ==============================================================================
+
+# Docker
+.dockerignore
+docker-compose.override.yml
+.docker/
+
+# Vagrant
+.vagrant/
+*.box
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+*.auto.tfvars
+.terraform.lock.hcl
+
+# Ansible
+*.retry
+.ansible/
+hosts.ini
+inventory.ini
+
+# Kubernetes
+*.kubeconfig
+kubeconfig
+.kube/
+
+# ==============================================================================
+# 📊 MONITORING & LOGS
+# ==============================================================================
+
+# Prometheus
+prometheus_data/
+*.prom
+
+# Grafana
+grafana_data/
+*.gf
+
+# Application logs
+application.log
+error.log
+access.log
+debug.log
+
+# ==============================================================================
+# 🧪 TESTING
+# ==============================================================================
+
+# Test outputs
+test_output/
+test-results/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Performance test results
+*.perf
+*.prof
+*.trace
+
+# ==============================================================================
+# 📡 NETWORKING & REMOTE
+# ==============================================================================
+
+# SSH config
+.ssh/
+known_hosts
+authorized_keys
+
+# VPN configs
+*.ovpn
+*.vpn
+
+# ==============================================================================
+# 🌐 WEB & API
+# ==============================================================================
+
+# Static files
+static/
+media/
+uploads/
+
+# Session files
+sessions/
+*.session
+
+# ==============================================================================
+# NOTES & COMMENTS
+# ==============================================================================
+
+# This .gitignore prioritizes security by preventing:
+# ✅ Credential leaks (passwords, API keys, tokens)
+# ✅ SSH key exposure
+# ✅ Database connection strings
+# ✅ Personal information
+# ✅ Large binary files
+# ✅ Temporary/cache files
+# ✅ IDE-specific configurations
+#
+# Best Practices:
+# 1. Never commit real credentials
+# 2. Use environment variables for secrets
+# 3. Add .env.example with dummy values
+# 4. Review files before committing
+# 5. Use git secrets/pre-commit hooks
+#
+# To check what's being ignored:
+#   git status --ignored
+#
+# To force add an ignored file (use cautiously):
+#   git add -f filename
+#
+# ==============================================================================
+
+# End of .gitignore
